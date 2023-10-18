@@ -1,0 +1,239 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: auto;        
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hongo img{
+    width: 3%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+.hongo {
+    display: flex;
+    justify-content: center;
+}
+
+  
+.carrusel {
+    flex: 1; /* Ocupa el 100% del ancho disponible */
+    margin: 10px; /* Agrega un margen entre elementos */
+}
+
+
+.imagen-trabajo, .titulo-trabajo {
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;/*quita el punto de los links*/
+}
+
+a {
+    text-decoration: none;/*quita decoración de los links por ejemplo el subrayado*/
+    
+}
+
+header a i {
+    color: rgb(237, 205, 205);
+    font-size: 3em;
+    padding: 0.8em;
+    margin: auto;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+    margin-right: 2.5em;
+}
+
+header nav ul li a {
+    color: rgb(237, 205, 205);
+}
+
+footer nav ul li a {
+    color: rgb(175, 152, 161);
+}
+
+footer {
+    padding-bottom: 1%;
+}
+
+a i.fa-solid.fa-heart.fixed{
+    position: fixed;
+    bottom: 10%;
+    right: 15%;
+}
+
+.fa-solid {
+    font-weight: 900;
+}
+
+.fuente-acento {
+    color: burlywood;
+    padding-left: 2em ;
+}
+
+footer {
+    background-color: #22211f;
+    width: 100%;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+  pequeñas */
+   body {
+      font-size: 15px;   
+    }
+    
+    header{
+        background-color: #180522;
+    }
+    .seccion-1 {
+        flex-direction: column; /* Cambia la dirección de flexbox en pantallas pequeñas */
+        
+        
+    }
+
+    .acerca-imagen img {        
+        width: 20%;
+        text-align: center;
+        align-content: center;
+             
+    }
+    
+    .acerca-de, .acerca-imagen, .carrusel, .card-trabajo {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        margin: 2%; /* Elimina el margen entre elementos */
+        text-align: justify;
+    }
+
+    .seccion-2 {
+        flex-direction: column; /* Cambia la dirección de flexbox en pantallas pequeñas */
+    }
+    .checkbtn {
+        display: block;
+    }
+    
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #030303;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    
+    #encabezado nav ul li  {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    
+    #check:checked ~ .checkbtn {
+        color: aqua;
+    }
+            
+    
+    
+}
+  /* Estilos para pantallas más grandes (a partir de 769px) */
+  
+@media (min-width: 769px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
+  grandes */
+    body {
+      font-size: 30px;      
+    }
+    
+    header{
+        background-color: #1d1b1d;
+    }
+    .seccion-1 {
+        /*background-color: #eeeeee;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 10%;
+        text-align: justify;
+        gap: 5%;    
+     }
+
+    .seccion-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+    .acerca-de {
+        flex: 1;
+        width: 30%;   
+        
+    }
+    
+    .acerca-imagen {
+        flex: 1;
+        width: 48%;
+        margin-left: 2%;
+        margin-top: 2%;           
+    }
+    .acerca-imagen img {
+        max-width: 30%;
+        max-height: auto;
+        display: block;
+        border-radius: 10%;
+    }
+    .card-trabajo {
+        flex: 1;
+        width: 30%; /* 3 elementos en una fila en pantallas grandes */
+        margin: 20px; /* Agrega un margen entre elementos */
+    }
+    
+    .trabajos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espacia uniformemente los elementos en pantallas grandes */
+        margin-left: 3rem;
+    }
+
+    
+}
+
+

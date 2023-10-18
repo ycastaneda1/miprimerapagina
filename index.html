@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Mi primera web</title>
+    <script src="https://kit.fontawesome.com/2c15e5ca37.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header id=encabezado>
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+            <nav class="navbar">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#seccion-principal">Acerca de mi</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="index.html">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>                    
+                </ul>    
+            </nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2 class="acerca-de-texto">Acerca de mi</h2> 
+                    <p class="parrafo1">¡Bienvenido a mi página! Aquí, obtendrás información sobre mi.</p>
+                    <p class="parrafo2">Me llamo Yessica, nací en Bogotá Colombia y es mi actual ciudad de residencia. Me encanta aprender constantemente y justo estoy estudiando HTML, CSS y JavaScript.</p>
+                    <p>Me gustaría llevar mis conocimientos a otro nivel y esto solo se logra en la pràctica, es por esto que creè este sitio para demostrar lo que he aprendido.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/mifoto.png" width=60% alt="imagen personal">
+                </div>
+            </section>
+            <div class="hongo">
+                <img  src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f344.svg">
+            </div>
+            <section class="seccion-2">
+                <div class="carrusel">
+                    <img src="img/3.jpeg" width=100% alt="imagen carrusel">
+                </div>
+            </section>
+            <section class="trabajos">
+                <div class="card-trabajo" >
+                    <div class="imagen-trabajo">
+                        <img src="img/profile.jpg" width=20% alt="imagen personal">
+                    </div>
+                    <div class="titulo-trabajo">
+                        <h3>Trabajo1</h3>
+                    </div>
+                    <div class="descripcion-trabajo">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sunt corporis, alias ipsum dolores inventore modi temporibus reprehenderit. Libero velit veniam labore ipsum commodi odio a repellat in esse repellendus.</p>
+                    </div>
+                </div>
+                <div class="card-trabajo" >
+                    <div class="imagen-trabajo">
+                        <img src="img/profile.jpg" width=20% alt="imagen personal">
+                    </div>
+                    <div class="titulo-trabajo">
+                        <h3>Trabajo1</h3>
+                    </div>
+                    <div class="descripcion-trabajo">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sunt corporis, alias ipsum dolores inventore modi temporibus reprehenderit. Libero velit veniam labore ipsum commodi odio a repellat in esse repellendus.</p>
+                    </div>
+                </div>
+                <div class="card-trabajo" >
+                    <div class="imagen-trabajo">
+                        <img src="img/profile.jpg" width=20% alt="imagen personal">
+                    </div>
+                    <div class="titulo-trabajo">
+                        <h3>Trabajo1</h3>
+                    </div>
+                    <div class="descripcion-trabajo">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sunt corporis, alias ipsum dolores inventore modi temporibus reprehenderit. Libero velit veniam labore ipsum commodi odio a repellat in esse repellendus.</p>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer id="contacto">
+                <div id="footer">
+                    <a href="https://egg.live">
+                        <i class="i fa-solid fa-heart fixed"></i>
+                    </a>
+                    <h3 class ="fuente-acento">Contacto</h3>
+                    <nav>
+                        <ul>
+                            <li><a href>Instagram</a></li>
+                            <li><a href>TikTok</a></li>
+                            <li><a href>Whatsapp</a></li>                            
+                        </ul>
+                    </nav>
+                </div>
+        </footer>    
+    </div> 
+</body>
+
+</html>
