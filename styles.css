@@ -103,6 +103,10 @@ footer {
     display: none;
 }
 
+.greeting {
+    color: burlywood;
+    text-align: center;
+}
 
 
 /* Estilos para pantallas más pequeñas (hasta 768px) */
